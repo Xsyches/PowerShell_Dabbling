@@ -225,9 +225,6 @@ Out-File $env:userprofile\Desktop\$computername.txt -Append;
  Get-SecOpsNetworkStatistics -ComputerName $computername | Format-Table -AutoSize |
 Out-File $env:userprofile\Desktop\$computername.txt -Append;
 
-$ie = New-Object -ComObject InternetExplorer.Application
-$ie.Navigate("https://people.sclhs.net/Person.aspx?accountname=SCLHS%5C$identity")
-$ie.Visible = $true
 
  }
  
