@@ -87,8 +87,4 @@ Out-File $env:userprofile\desktop\$ComputerName.txt -Append;
 Invoke-command -ComputerName $ComputerName -ScriptBlock {Get-ChildItem -Recurse -Path "C:\Users\*\Documents\"} -ErrorAction SilentlyContinue |
 Out-File $env:userprofile\desktop\$ComputerName.txt -Append; 
 
-#$ie = New-Object -ComObject InternetExplorer.Application
-#$ie.Navigate("https://people.sclhs.net/Person.aspx?accountname=SCLHS%5C$identity")
-#$ie.Visible = $true
-
 }
